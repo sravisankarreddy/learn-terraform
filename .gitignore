@@ -1,0 +1,28 @@
+# Local .terraform directories (contains cached providers and modules)
+**/.terraform/*
+
+# .tfstate files contain the current state of your infrastructure.
+# They should NOT be committed as they can contain sensitive data/secrets.
+*.tfstate
+*.tfstate.*
+
+# Crash logs (generated if Terraform crashes)
+crash.log
+crash.*.log
+
+# Exclude all variable files that might contain secrets or environment-specific values
+*.tfvars
+*.tfvars.json
+
+# Exclude local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include CLI configuration files if they contain user-specific settings
+.terraformrc
+terraform.rc
+
+# Exclude explicit plan output files (can contain unencrypted secrets)
+*tfplan*
